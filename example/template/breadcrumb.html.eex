@@ -1,0 +1,18 @@
+<%= for breadcrumb_trail <- @breadcrumb_trails do %>
+  <div itemscope itemtype="http://schema.org/BreadcrumbList">
+  <% trail_length = Enum.count(breadcrumb_trail) %>
+  <%= for {breadcrumb, i} <- Enum.with_index(breadcrumb_trail) do %>
+    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <%= if breadcrumb[:url] do %>
+        <a itemprop="item" href="<%= breadcrumb[:url] %>"><span itemprop="name"><%= breadcrumb[:name] %></span></a>
+      <% else %>
+        <span itemprop="name"><%= breadcrumb[:name] %></span>
+      <% end %>
+      <meta itemprop="position" content="<%= i + 1 %>" />
+    </span>
+    <%= if trail_length != i + 1 do %>
+      &gt;
+    <% end %>
+  <% end %>
+  </div>
+<% end %>
