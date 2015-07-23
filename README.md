@@ -57,6 +57,10 @@ plug :add_breadcrumb, name: 'breadcrumb_trail 1', url: '/page/1', index: 1
 plug :add_breadcrumb, name: 'breadcrumb_trail 2', url: '/page/2', index: 2
 ```
 
+## Requirements
+
+[plug](https://github.com/elixir-lang/plug)
+
 ## License
 
 MIT
