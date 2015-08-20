@@ -8,7 +8,7 @@ Elixir lang port of [Breadcrumble](https://github.com/ma2gedev/breadcrumble)
 # mix.exs
 defp deps do
   [
-    {:breadcrumble, "~> 0.1.0"}
+    {:breadcrumble, "~> 0.2.0"}
   ]
 end
 
@@ -55,6 +55,34 @@ plug :add_breadcrumb, name: 'breadcrumb_trail 1', url: '/page/1', index: 1
 
 # create a second trail
 plug :add_breadcrumb, name: 'breadcrumb_trail 2', url: '/page/2', index: 2
+```
+
+## Usage for Phoenix application
+
+```bash
+$ mix breadcrumble.gen.views
+* creating web/views/breadcrumble_view.ex
+* creating web/templates/breadcrumble/breadcrumb.html.eex
+```
+
+```elixir
+# web/web.ex
+defmodule YourApp.Web do
+  ...
+  def controller do
+    quote do
+      ...
+      use Breadcrumble  <= ADD
+    end
+  end
+  ...
+end
+
+# add breadcrumb in controller
+plug :add_breadcrumb, name: 'top', url: '/'
+
+# render breadcrumb in template
+<%= render YourApp.BreadcrumbleView, "breadcrumb.html", breadcrumb_trails: @breadcrumb_trails %>
 ```
 
 ## Requirements
