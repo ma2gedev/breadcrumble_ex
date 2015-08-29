@@ -8,7 +8,7 @@ Elixir lang port of [Breadcrumble](https://github.com/ma2gedev/breadcrumble)
 # mix.exs
 defp deps do
   [
-    {:breadcrumble, "~> 0.2.0"}
+    {:breadcrumble, "~> 1.0.0"}
   ]
 end
 
