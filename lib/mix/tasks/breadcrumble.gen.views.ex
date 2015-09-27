@@ -4,7 +4,7 @@ defmodule Mix.Tasks.Breadcrumble.Gen.Views do
 
   @shortdoc "Generates view and template for the Phoenix application"
 
-  def run(args) do
+  def run(_args) do
     app_module = Mix.Project.config[:app] |> Atom.to_string |> Mix.Utils.camelize
     create_file Path.join(["web", "views", "breadcrumble_view.ex"])
                 |> Path.relative_to(Mix.Project.app_path),
