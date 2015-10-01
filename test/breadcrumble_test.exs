@@ -1,6 +1,6 @@
 defmodule BreadcrumbleTest do
   use Breadcrumble
-  use ExUnit.Case, async: true
+  use PowerAssert, async: true
   use Plug.Test
 
   require Logger
