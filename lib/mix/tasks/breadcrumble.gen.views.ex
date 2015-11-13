@@ -19,5 +19,5 @@ defmodule Mix.Tasks.Breadcrumble.Gen.Views do
     use <%= @app_module %>.Web, :view
   end
   """
-  embed_text :breadcrumb, from_file("../../../../priv/templates/breadcrumb.html.eex")
+  embed_text :breadcrumb, from_file: Path.expand("../../../priv/templates/breadcrumb.html.eex", __DIR__)
 end
