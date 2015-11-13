@@ -7,7 +7,7 @@ defmodule Breadcrumble.Mixfile do
      elixir: "~> 1.0",
      description: "Elixir port of Breadcrumble library",
      package: [
-       contributors: ["Takayuki Matsubara"],
+       maintainers: ["Takayuki Matsubara"],
        licenses: ["MIT"],
        links: %{"GitHub" => "https://github.com/ma2gedev/breadcrumble_ex"}
      ],
