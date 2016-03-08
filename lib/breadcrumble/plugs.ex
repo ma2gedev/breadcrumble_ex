@@ -3,7 +3,7 @@ defmodule Breadcrumble.Plugs do
     breadcrumb = [name: opts[:name], url: opts[:url]]
     trail_index = opts[:index] || 0
     breadcrumb_trails = Map.get(conn.assigns, :breadcrumb_trails, [])
-                        |> update_breadcrumb_trails trail_index, breadcrumb
+                        |> update_breadcrumb_trails(trail_index, breadcrumb)
     %{conn | assigns: Map.put(conn.assigns, :breadcrumb_trails, breadcrumb_trails)}
   end 
 
