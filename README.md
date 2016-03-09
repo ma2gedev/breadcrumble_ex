@@ -1,6 +1,6 @@
 # Breadcrumble
 
-[![hex.pm version](https://img.shields.io/hexpm/v/breadcrumble.svg)](https://hex.pm/packages/breadcrumble) [![hex.pm downloads](https://img.shields.io/hexpm/dt/breadcrumble.svg)](https://hex.pm/packages/breadcrumble) [![Build Status](https://travis-ci.org/ma2gedev/breadcrumble_ex.svg?branch=master)](https://travis-ci.org/ma2gedev/breadcrumble_ex)
+[![hex.pm version](https://img.shields.io/hexpm/v/breadcrumble.svg)](https://hex.pm/packages/breadcrumble) [![hex.pm daily downloads](https://img.shields.io/hexpm/dd/breadcrumble.svg)](https://hex.pm/packages/breadcrumble) [![hex.pm weekly downloads](https://img.shields.io/hexpm/dw/breadcrumble.svg)](https://hex.pm/packages/breadcrumble) [![hex.pm downloads](https://img.shields.io/hexpm/dt/breadcrumble.svg)](https://hex.pm/packages/breadcrumble) [![Build Status](https://travis-ci.org/ma2gedev/breadcrumble_ex.svg?branch=master)](https://travis-ci.org/ma2gedev/breadcrumble_ex)
 
 Elixir lang port of [Breadcrumble](https://github.com/ma2gedev/breadcrumble)
 
