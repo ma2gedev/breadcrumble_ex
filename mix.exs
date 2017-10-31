@@ -34,6 +34,6 @@ defmodule Breadcrumble.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [{:plug, ">= 0.12.0 and < 2.0.0"},
-     {:power_assert, "~> 0.0.1", only: :test}]
+     {:power_assert, "~> 0.1", only: :test}]
   end
 end
