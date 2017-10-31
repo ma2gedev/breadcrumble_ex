@@ -11,7 +11,7 @@ defmodule Mix.Tasks.Breadcrumble.Gen.Views do
                 view_template(app_module: app_module)
     create_file Path.join(["web", "templates", "breadcrumble", "breadcrumb.html.eex"])
                 |> Path.relative_to(Mix.Project.app_path),
-                breadcrumb_text
+                breadcrumb_text()
   end
 
   embed_template :view, """
