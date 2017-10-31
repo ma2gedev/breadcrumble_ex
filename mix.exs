@@ -3,7 +3,7 @@ defmodule Breadcrumble.Mixfile do
 
   def project do
     [app: :breadcrumble,
-     version: "1.0.3",
+     version: "1.0.4",
      elixir: "~> 1.0",
      description: "Elixir port of Breadcrumble library",
      package: [
