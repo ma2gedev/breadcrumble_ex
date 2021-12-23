@@ -30,7 +30,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Elixir
-      uses: actions/setup-elixir@v1
+      uses: erlef/setup-beam@v1
       with:
         elixir-version: ${{ matrix.elixir }} # Define the elixir version [required]
         otp-version: ${{ matrix.otp }} # Define the OTP version [required]
@@ -56,7 +56,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Elixir
-      uses: actions/setup-elixir@v1
+      uses: erlef/setup-beam@v1
       with:
         elixir-version: ${{ matrix.elixir }} # Define the elixir version [required]
         otp-version: ${{ matrix.otp }} # Define the OTP version [required]
