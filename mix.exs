@@ -37,9 +37,7 @@ defmodule Breadcrumble.Mixfile do
   defp deps do
     [
       {:plug, ">= 0.12.0 and < 2.0.0"},
-      {:power_assert, "~> 0.2.1", only: :test},
-      {:mime, "< 2.0.0"},
-      {:telemetry, "< 1.0.0"}
+      {:power_assert, "~> 0.2.1", only: :test}
     ]
   end
 end
