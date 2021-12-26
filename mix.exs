@@ -5,7 +5,7 @@ defmodule Breadcrumble.Mixfile do
     [
       app: :breadcrumble,
       version: "1.0.4",
-      elixir: "~> 1.7",
+      elixir: "~> 1.9",
       description: "Elixir port of Breadcrumble library",
       package: [
         maintainers: ["Takayuki Matsubara"],
