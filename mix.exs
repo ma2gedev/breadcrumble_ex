@@ -5,7 +5,7 @@ defmodule Breadcrumble.Mixfile do
     [
       app: :breadcrumble,
       version: "1.0.4",
-      elixir: "~> 1.7",
+      elixir: "~> 1.9",
       description: "Elixir port of Breadcrumble library",
       package: [
         maintainers: ["Takayuki Matsubara"],
@@ -35,6 +35,9 @@ defmodule Breadcrumble.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:plug, ">= 0.12.0 and < 2.0.0"}, {:power_assert, "~> 0.2.1", only: :test}]
+    [
+      {:plug, ">= 0.12.0 and < 2.0.0"},
+      {:power_assert, "~> 0.2.1", only: :test}
+    ]
   end
 end
